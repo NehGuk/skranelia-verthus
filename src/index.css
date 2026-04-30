@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -23,4 +29,9 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
