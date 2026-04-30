@@ -12,13 +12,11 @@
   --accent: #aa3bff;
   --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
+  /* letter-spacing: 0.05rem; */
   background: var(--bg);
-  font-synthesis: none;
+  color: var(--text);
   text-rendering: optimizeLegibility;
+  line-height: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -28,6 +26,12 @@
 }
 
 body {
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
