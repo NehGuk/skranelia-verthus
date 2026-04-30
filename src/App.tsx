@@ -1,9 +1,15 @@
 import "./App.css"
+import logo from "./assets/logo.png"
+import Welcome from "./components/Welcome/Welcome"
 
 function App() {
   return (
     <>
-      <h1>Skranelia Vertshus</h1>
+    <img src={logo} className="logo-header"></img>
+    <Welcome />
+    
+
+      
     </>
   )
 }
