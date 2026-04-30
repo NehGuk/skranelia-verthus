@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en, nb, pt",
+  "cSpell.words": ["AUTOINCREMENT"],
+  "cSpell.ignoreWords": []
+}
