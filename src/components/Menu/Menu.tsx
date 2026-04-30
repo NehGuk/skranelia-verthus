@@ -1,4 +1,5 @@
 import "./Menu.css"
+import { Link } from "react-router-dom"
 import type { MenuItem } from "../../data/menu"
 
 type Props = {
@@ -13,7 +14,7 @@ function Menu({ menu }: Props) {
         {menu.map((dish) => {
           return (
             <li key={dish.id}>
-              <a href="#">{dish.title}</a>
+              <Link to={`/dish/${dish.id}`}>{dish.title}</Link>
             </li>
           )
         })}

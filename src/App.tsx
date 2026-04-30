@@ -1,15 +1,18 @@
-import "./App.css"
-import Header from "./components/Header/Header"
-import Main from "./components/Main/Main"
-import Footer from "./components/Footer/Footer"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Layout from "./Layout"
+import Home from "./pages/Home/Home"
+import Dish from "./pages/Dish/Dish"
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <BrowserRouter basename="skranelia-vertshus">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="dish/:id" element={<Dish />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
