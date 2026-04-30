@@ -1,16 +1,15 @@
 import "./App.css"
-import logo from "./assets/logo.png"
+import Header from "./components/Header/Header"
 import Welcome from "./components/Welcome/Welcome"
 import Menu from "./components/Menu/Menu"
+import { menu } from "./data/menu"
 
 function App() {
   return (
     <>
-    <article className="logo-container">
-    <img src={logo} className="logo-header"></img>
-    </article>
-    <Welcome />
-    <Menu />
+      <Header />
+      <Welcome />
+      <Menu menu={menu} />
     </>
   )
 }

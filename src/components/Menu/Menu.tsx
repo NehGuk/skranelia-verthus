@@ -1,17 +1,23 @@
-import { menu } from "../../data/menu"
+import type { MenuItem } from "../../data/menu"
 
-function Menu() {
+type Props = {
+  menu: MenuItem[]
+}
+
+function Menu({ menu }: Props) {
   return (
-    <>
+    <article>
       <h2>Vårmeny</h2>
-      <h3>Dish 1</h3>
-      <h3>Dish 2</h3>
-      <h3>Dish 3</h3>
-      <h3>Dish 4</h3>
-      <h3>Dish 5</h3>
-      <h3>Dish 6</h3>
-      <h3>Dish 7</h3>
-    </>
+      <ul>
+        {menu.map((dish) => {
+          return (
+            <li key={dish.id}>
+              <a href="#">{dish.title}</a>
+            </li>
+          )
+        })}
+      </ul>
+    </article>
   )
 }
 
