@@ -1,3 +1,3 @@
 # Skranelia Vertshus
 
-Velkomen!
+Velkommen!
