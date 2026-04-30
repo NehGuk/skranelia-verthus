@@ -1,3 +1,4 @@
+import "./Menu.css"
 import type { MenuItem } from "../../data/menu"
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
 
 function Menu({ menu }: Props) {
   return (
-    <section>
+    <section className="menu">
       <h2>Vårmeny</h2>
       <ul>
         {menu.map((dish) => {
