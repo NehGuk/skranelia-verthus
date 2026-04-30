@@ -6,7 +6,7 @@ type Props = {
 
 function Menu({ menu }: Props) {
   return (
-    <article>
+    <section>
       <h2>Vårmeny</h2>
       <ul>
         {menu.map((dish) => {
@@ -17,7 +17,7 @@ function Menu({ menu }: Props) {
           )
         })}
       </ul>
-    </article>
+    </section>
   )
 }
 
