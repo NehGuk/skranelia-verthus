@@ -1,0 +1,29 @@
+.logo-container {
+  /*   border: 1px solid green; */
+  text-align: center;
+}
+
+.logo-header {
+}
+
+@media (min-width: 30px) and (max-width: 250px) {
+  .logo-header {
+    width: 95%;
+  }
+}
+@media (min-width: 250px) and (max-width: 375px) {
+  .logo-header {
+    width: 90%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 834px) {
+  .logo-header {
+    width: 21rem;
+  }
+}
+@media (min-width: 834px) {
+  .logo-header {
+    width: 30rem;
+  }
+}
