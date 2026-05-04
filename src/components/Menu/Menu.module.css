@@ -1,0 +1,64 @@
+.menu {
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu h3 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 2rem;
+}
+
+li {
+  border-top: 1px solid rgba(129, 129, 129, 0.3);
+  margin-top: 3rem;
+}
+
+.dish-container {
+  text-align: left;
+  display: grid;
+  grid-template-areas:
+    "dish-name dish-price"
+    "dish-ingredients dish-ingredients";
+}
+
+/* Styles for dish elements rendered in the Dish component */
+.dish-container :nth-child(1) {
+  grid-area: dish-name;
+}
+
+.dish-container :nth-child(2) {
+  grid-area: dish-ingredients;
+}
+
+.dish-container :nth-child(3) {
+  grid-area: dish-price;
+  margin-left: auto;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.starters,
+.main-courses,
+.desserts {
+  margin-top: 3rem;
+  border: 1px solid var(--color-accent);
+  list-style: none;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 744px) {
+  .menu {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}

@@ -1,18 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Layout from "./Layout"
-import Home from "./pages/Home/Home"
-import Dish from "./pages/Dish/Dish"
+import Header from "./components/Header/Header"
+import Welcome from "./components/Welcome/Welcome"
+import Menu from "./components/Menu/Menu"
+import Footer from "./components/Footer/Footer"
+import { menu } from "./data/menu"
 
 function App() {
   return (
-    <BrowserRouter basename="skranelia-vertshus">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="dish/:id" element={<Dish />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Header />
+      <Welcome />
+      <Menu menu={menu} />
+      <Footer />
+    </>
   )
 }
 

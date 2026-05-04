@@ -1,11 +1,11 @@
-import "./Header.css"
+import styles from "./Header.module.css"
 import logo from "../../assets/logo.png"
 
 function Header() {
   return (
-    <header>
-      <article className="logo-container">
-        <img src={logo} className="logo-header"></img>
+    <header className={styles.header}>
+      <article className={styles["logo-container"]}>
+        <img src={logo} className={styles["logo-header"]}></img>
       </article>
     </header>
   )
