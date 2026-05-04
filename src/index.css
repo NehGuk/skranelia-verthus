@@ -5,12 +5,11 @@
 }
 
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #525252;
   --bg: #dbdbdb;
-  --border: #e5e4e7;
-  --accent: #aa3bff;
-  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --border: rgba(128, 128, 128, 0.3);
+  --accent: #8e4d18;
+  --shadow: rgba(0, 0, 0, 0.08) 0 10px 15px -3px, rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
 
   /* letter-spacing: 0.05rem; */
   background: var(--bg);
@@ -26,6 +25,7 @@
 }
 
 body {
+  color: var(--text);
   max-width: 800px;
   margin: 0 auto;
   text-align: center;

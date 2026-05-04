@@ -49,6 +49,7 @@ li {
   margin-top: 3rem;
   border: 1px solid darkred;
   list-style: none;
+  box-shadow: var(--shadow);
 }
 
 @media (min-width: 744px) {
