@@ -1,14 +1,15 @@
-import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
-import Menu from "./components/Menu/Menu"
 import Welcome from "./components/Welcome/Welcome"
+import Menu from "./components/Menu/Menu"
+import Footer from "./components/Footer/Footer"
+import { menu } from "./data/menu"
 
 function App() {
   return (
     <>
       <Header />
       <Welcome />
-      <Menu />
+      <Menu menu={menu} />
       <Footer />
     </>
   )

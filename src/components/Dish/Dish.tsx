@@ -1,10 +1,16 @@
-function Dish() {
+type Props = {
+  title: string
+  ingredients: string
+  category: string
+  price: string
+}
+
+function Dish({ title, ingredients, category, price }: Props) {
   return (
     <>
-      <h3>Dish name</h3>
-      <p>Description</p>
-      <p>etc</p>
-      <p>etc</p>
+      <h4>{title}</h4>
+      <p>{ingredients}</p>
+      <p>{price}</p>
     </>
   )
 }

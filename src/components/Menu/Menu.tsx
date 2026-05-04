@@ -1,20 +1,53 @@
 import Dish from "../Dish/Dish"
+import type { MenuItem } from "../../data/menu"
 
-function Menu() {
+type Props = {
+  menu: MenuItem[]
+}
+
+function Menu({ menu }: Props) {
+  const starters = menu.filter((item) => {
+    return item.category === "Forrett"
+  })
+  const mainCourses = menu.filter((item) => {
+    return item.category === "Hovedrett"
+  })
+  const desserts = menu.filter((item) => {
+    return item.category === "Dessert"
+  })
+
   return (
     <section className="menu">
       <h2>Vårmeny</h2>
-
-      <ul>
-        <li>
-          <Dish />
-        </li>
-        <li>
-          <Dish />
-        </li>
-        <li>
-          <Dish />
-        </li>
+      <ul className="starters">
+        <h3>Forrett</h3>
+        {starters.map((dish) => {
+          return (
+            <li key={dish.id}>
+              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            </li>
+          )
+        })}
+      </ul>
+      <ul className="main-courses">
+        <h3>Hovedrett</h3>
+        {mainCourses.map((dish) => {
+          return (
+            <li key={dish.id}>
+              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            </li>
+          )
+        })}
+      </ul>
+      <ul className="desserts">
+        <h3>Dessert</h3>
+        {desserts.map((dish) => {
+          return (
+            <li key={dish.id}>
+              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            </li>
+          )
+        })}
       </ul>
     </section>
   )
