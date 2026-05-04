@@ -1,7 +1,6 @@
 type Props = {
   title: string
   ingredients: string
-  category: string
   price: string
 }
 
