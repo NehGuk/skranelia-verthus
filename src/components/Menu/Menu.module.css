@@ -30,6 +30,7 @@ li {
     "dish-ingredients dish-ingredients";
 }
 
+/* Styles for dish elements rendered in the Dish component */
 .dish-container :nth-child(1) {
   grid-area: dish-name;
 }
@@ -42,7 +43,7 @@ li {
   grid-area: dish-price;
   margin-left: auto;
   color: var(--color-accent);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .starters,

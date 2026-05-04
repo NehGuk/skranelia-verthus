@@ -2,5 +2,6 @@
   margin: 5rem auto 3rem auto;
 }
 
-.address {
+.footer h3 {
+  font-family: var(--typeface-body-text);
 }

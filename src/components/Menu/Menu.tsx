@@ -20,6 +20,7 @@ function Menu({ menu }: Props) {
   return (
     <section className={styles["menu"]}>
       <h2>Meny</h2>
+      {/* Renders starters menu */}
       <ul className={styles["starters"]}>
         <h3>Forrett</h3>
         {starters.map((dish) => {
@@ -30,6 +31,7 @@ function Menu({ menu }: Props) {
           )
         })}
       </ul>
+      {/* Renders main courses menu */}
       <ul className={styles["main-courses"]}>
         <h3>Hovedrett</h3>
         {mainCourses.map((dish) => {
@@ -40,6 +42,7 @@ function Menu({ menu }: Props) {
           )
         })}
       </ul>
+      {/* Renders desserts menu */}
       <ul className={styles["desserts"]}>
         <h3>Dessert</h3>
         {desserts.map((dish) => {
