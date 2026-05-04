@@ -18,7 +18,7 @@ ul {
 }
 
 li {
-  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  border-top: 1px solid rgba(129, 129, 129, 0.3);
   margin-top: 3rem;
 }
 
@@ -41,13 +41,15 @@ li {
 .dish-container :nth-child(3) {
   grid-area: dish-price;
   margin-left: auto;
+  color: var(--color-accent);
+  font-weight: 400;
 }
 
 .starters,
 .main-courses,
 .desserts {
   margin-top: 3rem;
-  border: 1px solid darkred;
+  border: 1px solid var(--color-accent);
   list-style: none;
   box-shadow: var(--shadow);
 }
