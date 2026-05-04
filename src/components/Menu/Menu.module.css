@@ -1,0 +1,23 @@
+.menu {
+  /* border: 1px solid blue; */
+  max-width: 350px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.menu h2 {
+  margin-bottom: 1rem;
+}
+
+.menu h3 {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.starters,
+.main-courses,
+.desserts {
+  margin-top: 3rem;
+  border: 1px solid darkred;
+  list-style: none;
+}

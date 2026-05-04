@@ -1,3 +1,4 @@
+import styles from "./Menu.module.css"
 import Dish from "../Dish/Dish"
 import type { MenuItem } from "../../data/menu"
 
@@ -17,9 +18,9 @@ function Menu({ menu }: Props) {
   })
 
   return (
-    <section className="menu">
-      <h2>Vårmeny</h2>
-      <ul className="starters">
+    <section className={styles["menu"]}>
+      <h2>Meny</h2>
+      <ul className={styles["starters"]}>
         <h3>Forrett</h3>
         {starters.map((dish) => {
           return (
@@ -29,7 +30,7 @@ function Menu({ menu }: Props) {
           )
         })}
       </ul>
-      <ul className="main-courses">
+      <ul className={styles["main-courses"]}>
         <h3>Hovedrett</h3>
         {mainCourses.map((dish) => {
           return (
@@ -39,7 +40,7 @@ function Menu({ menu }: Props) {
           )
         })}
       </ul>
-      <ul className="desserts">
+      <ul className={styles["desserts"]}>
         <h3>Dessert</h3>
         {desserts.map((dish) => {
           return (

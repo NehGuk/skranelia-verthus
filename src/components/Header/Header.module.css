@@ -1,9 +1,8 @@
-.logo-container {
-  /*   border: 1px solid green; */
-  text-align: center;
+.logo-header {
 }
 
-.logo-header {
+.logo-container {
+  text-align: center;
 }
 
 @media (min-width: 30px) and (max-width: 250px) {
