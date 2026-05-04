@@ -5,7 +5,7 @@ type Props = {
   price: string
 }
 
-function Dish({ title, ingredients, category, price }: Props) {
+function Dish({ title, ingredients, price }: Props) {
   return (
     <>
       <h4>{title}</h4>
