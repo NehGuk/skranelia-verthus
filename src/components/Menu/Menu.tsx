@@ -24,8 +24,8 @@ function Menu({ menu }: Props) {
         <h3>Forrett</h3>
         {starters.map((dish) => {
           return (
-            <li key={dish.id}>
-              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            <li key={dish.id} className={styles["dish-container"]}>
+              <Dish title={dish.title} ingredients={dish.ingredients} price={dish.price} />
             </li>
           )
         })}
@@ -34,8 +34,8 @@ function Menu({ menu }: Props) {
         <h3>Hovedrett</h3>
         {mainCourses.map((dish) => {
           return (
-            <li key={dish.id}>
-              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            <li key={dish.id} className={styles["dish-container"]}>
+              <Dish title={dish.title} ingredients={dish.ingredients} price={dish.price} />
             </li>
           )
         })}
@@ -44,8 +44,8 @@ function Menu({ menu }: Props) {
         <h3>Dessert</h3>
         {desserts.map((dish) => {
           return (
-            <li key={dish.id}>
-              <Dish title={dish.title} ingredients={dish.ingredients} category={dish.category} price={dish.price} />
+            <li key={dish.id} className={styles["dish-container"]}>
+              <Dish title={dish.title} ingredients={dish.ingredients} price={dish.price} />
             </li>
           )
         })}

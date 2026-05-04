@@ -1,5 +1,4 @@
 .menu {
-  /* border: 1px solid blue; */
   max-width: 350px;
   margin: 2rem auto;
   padding: 1rem;
@@ -10,8 +9,38 @@
 }
 
 .menu h3 {
+  text-align: left;
   text-transform: uppercase;
-  margin: 1rem;
+}
+
+ul {
+  padding: 2rem;
+}
+
+li {
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  margin-top: 3rem;
+}
+
+.dish-container {
+  text-align: left;
+  display: grid;
+  grid-template-areas:
+    "dish-name dish-price"
+    "dish-ingredients dish-ingredients";
+}
+
+.dish-container :nth-child(1) {
+  grid-area: dish-name;
+}
+
+.dish-container :nth-child(2) {
+  grid-area: dish-ingredients;
+}
+
+.dish-container :nth-child(3) {
+  grid-area: dish-price;
+  margin-left: auto;
 }
 
 .starters,
