@@ -4,7 +4,7 @@ function Welcome() {
   return (
     <section className={styles.welcome}>
       <h1>Velkommen</h1>
-      <p>Vi er glade for å ha deg her. Ta deg god tid og nyt menyen vår.</p>
+      <p> Her er det bare å lene seg tilbake og velge det du har lyst på.</p>
     </section>
   )
 }
