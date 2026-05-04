@@ -9,7 +9,6 @@ function App() {
       <Header />
       <Welcome />
       <Menu />
-
       <Footer />
     </>
   )
